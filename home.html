@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="brand" href="home.html">
+        <img src="images/queue-logo.png" alt="">
+      </a>
+
+      <nav class="main-nav">
+        <a href="home.html" class="active">Home</a>
+        <a href="create.html" class="">Create</a>
+        <a href="discover.html" class="">Discover</a>
+        <a href="library.html" class="">Library</a>
+        <a href="about.html" class="">About</a>
+      </nav>
+
+      <form class="header-search" action="discover.html">
+        <span class="search-symbol">⌕</span>
+        <input type="search" name="q" placeholder="Find music..." aria-label="Find music">
+      </form>
+
+      <a class="sign-in" href="#" data-message="Sign in dont wok lmap.">Sign In</a>
+    </header>
+
+    <main>
+      <section class="home-hero content-width">
+        <div class="hero-copy">
+          <span class="eyebrow">MUSIC DISCOVERY, THE LAZY WAY</span>
+          <h1>Keep the vibe <span class="gradient-text">going.</span></h1>
+          <p>A way to discover music and put it onto one playlists, the vibe flowing naturally from one song to the next. Queue continues the vibe you've set and carries it onto the next song.</p>
+          <a class="button primary" href="create.html">&#9654; Start a Queue</a>
+          <a class="button secondary" href="discover.html">Explore</a>
+        </div>
+
+        <div class="queue-preview panel">
+          <span class="eyebrow blue">NOW IN QUEUE</span>
+          <div class="now-playing">
+            <img src="images/artists/1.png" alt="Album artwork">
+            <div><strong>Song 1</strong>
+              <span>Artist 1 · 4:12</span>
+            </div><button class="round-button" data-message="Demo player paused.">&#9658;</button>
+          </div>
+
+          <p class="small-label">RECOMMENDED FROM YOUR LAST SONG</p>
+          <div class="mini-track">
+            <img src="images/artists/2.png" alt="">
+            <div>
+              <strong>Song 2</strong>
+              <span>Artist 2</span>
+            </div>
+            <span>3:48</span>
+            <a href="create.html">+</a>
+          </div>
+
+          <div class="mini-track">
+            <img src="images/artists/3.png" alt="">
+            <div>
+              <strong>Song 3</strong>
+              <span>Artist 3</span>
+            </div>
+            <span>5:02</span>
+            <a href="create.html">+</a>
+          </div>
+
+          <div class="mini-track">
+            <img src="images/artists/4.png" alt="">
+            <div>
+              <strong>Song 4</strong>
+              <span>Artist 4</span>
+            </div>
+            <span>4:33</span>
+            <a href="create.html">+</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-strip">
+        <div class="content-width">
+          <h2>Your queue, one song at a time.</h2>
+          <p class="section-description">Your Queue, your playlist, your rules. Q continuously<br class="desktop-only"> recommends only the song that fits the vibe you want.<br class="desktop-only"> The vibe at the palm of your hands</p>
+          <div class="steps-grid">
+            <div>
+              <span class="step-icon">&#9836;</span>
+              <h3>Current Song</h3>
+              <p>Music of your choosing</p>
+            </div>
+
+            <div>
+              <span class="step-icon active-icon">&#x2315;</span>
+              <h3>Analyze the Vibe</h3>
+              <p>Mood · Energy · Tempo</p>
+            </div>
+
+            <div><span class="step-icon">&#x1F56E</span>
+              <h3>Recommendations</h3>
+              <p>Perfect transitional tracks</p>
+            </div>
+
+            <div>
+              <span class="step-icon">+</span>
+              <h3>Add to Queue</h3>
+              <p>Keep the journey extending</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-width home-section">
+        <div class="section-heading">
+          <div>
+            <h2>Featured Queues</h2>
+            <p>Curated flows made to maintain perfect atmosphere</p>
+          </div>
+          <a href="discover.html" class="see-all">See all</a>
+        </div>
+
+        <div class="queue-cards four">
+          <a class="art-card" href="discover.html">
+            <img src="images/playlists/1.png" alt="After Hours playlist artwork">
+            <div class="art-meta">
+              <span class="tag">DARK</span>
+              <span>21 tracks</span>
+            </div>
+            <h3>After Hours</h3>
+          </a>
+
+          <a class="art-card" href="discover.html">
+            <img src="images/playlists/3.png" alt="Late night drive playlist artwork">
+            <div class="art-meta">
+              <span class="tag">CHILL</span>
+              <span>24 tracks</span>
+            </div>
+            <h3>Late Night Drive</h3>
+          </a>
+
+          <a class="art-card" href="discover.html">
+            <img src="images/playlists/4.png" alt="High energy playlist artwork">
+            <div class="art-meta">
+              <span class="tag">ENERGETIC</span>
+              <span>32 tracks</span>
+            </div>
+            <h3>High Energy</h3>
+          </a>
+
+          <a class="art-card" href="discover.html">
+            <img src="images/playlists/5.png" alt="Dreamy playlist artwork">
+            <div class="art-meta">
+              <span class="tag">DREAMY</span>
+              <span>18 tracks</span>
+            </div>
+            <h3>Sunny</h3>
+          </a>
+        </div>
+      </section>
+
+      <section class="atmosphere-section">
+        <div class="content-width">
+          <h2>Browse by Atmosphere</h2>
+          <p>Filter continuous queues perfectly tailored to your current mental state</p>
+          <div class="pill-row mood-filters">
+            <button class="pill selected" data-filter="all">All</button>
+            <button class="pill" data-filter="chill">Chill</button>
+            <button class="pill" data-filter="energetic">Energetic</button>
+            <button class="pill" data-filter="dreamy">Dreamy</button>
+            <button class="pill" data-filter="dark">Dark</button>
+            <button class="pill" data-filter="happy">Happy</button>
+            <button class="pill" data-filter="melancholy">Melancholy</button>
+          </div>
+
+          <div class="queue-cards three filter-cards">
+            <a class="art-card" data-mood="dreamy" href="discover.html">
+              <img src="images/playlists/2.png" alt=""><div class="art-meta">
+                <span class="tag">DREAMY</span>
+                <span>15 tracks</span>
+              </div><h3>Playlist 1</h3>
+            </a>
+
+            <a class="art-card" data-mood="chill" href="discover.html">
+              <img src="images/playlists/7.png" alt="">
+              <div class="art-meta">
+                <span class="tag">CHILL</span>
+                <span>30 tracks</span>
+              </div>
+              <h3>Playlist 2</h3>
+            </a>
+
+            <a class="art-card" data-mood="melancholy" href="discover.html">
+              <img src="images/playlists/6.png" alt="">
+              <div class="art-meta">
+                <span class="tag">MELANCHOLY</span>
+                <span>22 tracks</span>
+              </div>
+              <h3>Playlist 3</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-width home-section trending-section">
+        <div class="section-heading">
+          <div>
+            <h2>Trending Now</h2>
+            <p>The individual songs our users are building queues with the most this hour</p>
+          </div>
+          <span class="tag">UPDATED HOURLY</span>
+        </div>
+
+        <div class="trending-grid">
+          <a href="create.html" class="trend-item">
+            <b>01</b>
+            <img src="images/artists/1.png" alt=""><span>
+              <strong>Song 1</strong>
+              <small>Artist 1</small>
+            </span>
+            <em>24.1k queues</em>
+          </a>
+
+          <a href="create.html" class="trend-item">
+            <b>02</b>
+            <img src="images/artists/2.png" alt="">
+            <span>
+              <strong>Song 2</strong>
+              <small>Artist 2</small>
+            </span>
+            <em>18.7k queues</em>
+          </a>
+
+          <a href="create.html" class="trend-item">
+            <b>03</b>
+            <img src="images/artists/3.png" alt="">
+            <span>
+              <strong>Song 3</strong>
+              <small>Artist 3</small>
+            </span>
+            <em>15.3k queues</em>
+          </a>
+
+          <a href="create.html" class="trend-item">
+            <b>04</b>
+            <img src="images/artists/4.png" alt="">
+            <span>
+              <strong>Song 4</strong>
+              <small>Artist 4</small>
+            </span>
+            <em>12.9k queues</em>
+          </a>
+
+          <a href="create.html" class="trend-item">
+            <b>05</b>
+            <img src="images/artists/5.png" alt="">
+            <span>
+              <strong>Song 5</strong>
+              <small>Artist 5</small>
+            </span><em>11.2k queues</em>
+          </a>
+
+          <a href="create.html" class="trend-item">
+            <b>06</b>
+            <img src="images/artists/6.png" alt="">
+            <span>
+              <strong>Song 6</strong>
+              <small>Artist 6</small>
+            </span>
+            <em>9.8k queues</em>
+          </a>
+        </div>
+      </section>
+      
+      <section class="home-cta"><span class="tag">START TODAY</span>
+        <h2>Ready to start your queue?</h2><p>Never listen to a disjointed, jarring shuffle transition again. Experience<br class="desktop-only"> continuous music that fits your headspace perfectly.</p><a class="button primary" href="create.html">Start a Queue</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>QUEUE</strong>
+        <span>© 2026 Music Inc.</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="about.html#status">Status</a>
+        <a href="about.html#privacy">Privacy Policy</a>
+        <a href="about.html#terms">Terms of Service</a>
+        <a href="about.html#contact">Contact Support</a>
+      </div>
+
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="Twitter">♡</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
