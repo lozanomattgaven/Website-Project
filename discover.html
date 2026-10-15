@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Discover</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <header class="site-header">
+      <a class="brand" href="home.html">
+        <img src="images/queue-logo.png" alt="Queue">
+      </a>
+      
+      <nav class="main-nav">
+        <a href="home.html" class="">Home</a>
+        <a href="create.html" class="">Create</a>
+        <a href="discover.html" class="active">Discover</a>
+        <a href="library.html" class="">Library</a>
+        <a href="about.html" class="">About</a>
+      </nav>
+      <form class="header-search" action="discover.html">
+        <span class="search-symbol">⌕</span><input type="search" name="q" placeholder="Find music..." aria-label="Find music">
+      </form>
+      <a class="sign-in" href="#" data-message="Sign in is a demo feature.">Sign In</a>
+    </header>
+
+    <main>
+      <section class="content-width discover-page">
+        <div class="page-intro"><h1>Discover</h1><p>Explore new sounds and curated queues.</p></div>
+        <div class="discover-feature-grid">
+          <a class="feature-large" href="create.html">
+            <img src="images/playlists/1.png" alt="">
+            <div class="feature-info">
+              <div><span class="tag">DARK</span>
+                <h2>After Hours</h2>
+              </div><span>21 tracks</span>
+              <p>Deep electronic and synth atmospheres designed for late-night focus and long drives.</p>
+            </div>
+          </a>
+
+          <div class="feature-small-list">
+            <a class="feature-small" href="create.html">
+              <img src="images/playlists/3.png" alt="">
+              <div>
+                <div class="feature-label">
+                  <span class="tag">CHILL</span>
+                  <small>24 tracks</small>
+                </div>
+                <h2>Late Night Drive</h2>
+                <p>Smooth low-fidelity textures and atmospheric chords.</p>
+              </div>
+            </a>
+
+            <a class="feature-small" href="create.html">
+              <img src="images/playlists/4.png" alt="">
+              <div>
+                <div class="feature-label">
+                  <span class="tag">ENERGETIC</span>
+                  <small>32 tracks</small>
+                </div>
+                <h2>High Energy</h2>
+                <p>Intense, fast-tempo progressions to maintain high output.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <section class="browse-block">
+          <h2>Browse by Genre</h2>
+          <div class="pill-row">
+            <button class="pill selected">All</button>
+            <button class="pill">Electronic</button>
+            <button class="pill">Indie</button>
+            <button class="pill">Lo-Fi</button>
+            <button class="pill">Pop</button>
+            <button class="pill">Hip-Hop</button>
+            <button class="pill">Ambient</button>
+            <button class="pill">Synthwave</button>
+            <button class="pill">R&amp;B</button>
+            <button class="pill">Jazz</button>
+          </div>
+        </section>
+
+        <section class="browse-block">
+          <h2>Browse by Mood</h2>
+          <div class="pill-row">
+            <button class="pill selected">All</button>
+            <button class="pill">Chill</button>
+            <button class="pill">Energetic</button>
+            <button class="pill">Dreamy</button>
+            <button class="pill">Dark</button>
+            <button class="pill">Happy</button>
+            <button class="pill">Melancholy</button>
+          </div>
+        </section>
+
+        <section class="discover-trending">
+          <div class="section-heading">
+            <h2>Trending Now</h2>
+            <span class="tag">UPDATED DAILY</span>
+          </div>
+
+          <div class="trending-grid">
+            <a href="create.html" class="trend-item">
+              <b>01</b>
+              <img src="images/artists/1.png" alt="">
+              <span><strong>Trending Song 1</strong>
+                <small>Artist 1</small>
+              </span>
+              <em>24.1k plays</em>
+            </a>
+
+            <a href="create.html" class="trend-item">
+              <b>02</b>
+              <img src="images/artists/2.png" alt="">
+              <span><strong>Trending Song 2</strong>
+                <small>Artist 2</small>
+              </span>
+              <em>18.7k plays</em>
+            </a>
+
+            <a href="create.html" class="trend-item">
+              <b>03</b>
+              <img src="images/artists/3.png" alt="">
+              <span><strong>Trending song 3</strong>
+                <small>artist 3</small>
+              </span>
+              <em>15.3k plays</em>
+            </a>
+
+            <a href="create.html" class="trend-item">
+              <b>04</b>
+              <img src="images/artists/4.png" alt="">
+              <span><strong>Trending song 4</strong>
+                <small>Porkchop</small>
+              </span>
+              <em>15.3k plays</em>
+            </a>
+
+            <a href="create.html" class="trend-item">
+              <b>05</b>
+              <img src="images/artists/5.png" alt="">
+              <span><strong>Trending Song 5</strong>
+                <small>Artist 5</small>
+              </span>
+              <em>11.2k plays</em>
+            </a>
+
+            <a href="create.html" class="trend-item">
+              <b>06</b>
+              <img src="images/artists/6.png" alt="">
+              <span>
+                <strong>Trendin Song 6</strong>
+                <small>Artist 6</small>
+              </span>
+              <em>9.8k plays</em>
+            </a>
+          </div>
+        </section>
+
+        <section class="creator-section">
+          <h2>Featured Creators</h2>
+          <div class="creator-grid">
+            <article class="panel"><img src="images/artists/1.png" alt="">
+              <h3>TArtist 1</h3>
+                <span class="eyebrow">Vibe/Hip-hop</span>
+                <p>Artists works, What theyre know for, Brief Introduction.</p>
+            </article>
+
+            <article class="panel"><img src="images/artists/2.png" alt="">
+              <h3>Artist 2</h3>
+                <span class="eyebrow">Hip-hop</span>
+                <p>Artists works, What theyre know for, Brief Introduction.</p>
+            </article>
+
+            <article class="panel"><img src="images/artists/3.png" alt="">
+              <h3>Artist 3</h3>
+                <span class="eyebrow">Electronic Rock</span>
+                <p>Artists works, What theyre know for, Brief Introduction.</p>
+            </article>
+
+            <article class="panel"><img src="images/artists/4.png" alt="">
+              <h3>Artist 4</h3>
+                <span class="eyebrow">Lo-fi</span>
+                <p>Artists works, What theyre know for, Brief Introduction.</p>
+            </article>
+          </div>
+        </section>
+
+
+        <section class="directory-section">
+          <h2>Atmosphere Directory</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>TRACK</th>
+                  <th>ARTIST</th>
+                  <th>GENRE</th>
+                  <th>MOOD</th>
+                  <th>BPM</th>
+                  <th>ENERGY</th>
+                  <th>DURATION</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Song 1</td>
+                  <td>Artist 1</td>
+                  <td>Indie</td>
+                  <td>Melancholy</td>
+                  <td>98</td>
+                  <td>Medium</td>
+                  <td>3:48</td>
+                </tr>
+                
+                <tr>
+                  <td>Song 2</td>
+                  <td>Artist 2</td>
+                  <td>Synthwave</td>
+                  <td>Energetic</td>
+                  <td>115</td>
+                  <td>High</td>
+                  <td>5:02</td>
+                </tr>
+                
+                <tr>
+                  <td>Song 3</td>
+                  <td>Artist 3</td>
+                  <td>Ambient</td>
+                  <td>Chill</td>
+                  <td>72</td>
+                  <td>Low</td>
+                  <td>4:28</td>
+                </tr>
+                
+                <tr>
+                  <td>Song 4</td>
+                  <td>Artist 4</td>
+                  <td>Industrial</td>
+                  <td>Dark</td>
+                  <td>128</td>
+                  <td>High</td>
+                  <td>4:33</td>
+                </tr>
+                
+                <tr>
+                  <td>Song 5</td>
+                  <td>Artist 5</td>
+                  <td>Indie Pop</td>
+                  <td>Dreamy</td>
+                  <td>88</td>
+                  <td>Low</td>
+                  <td>3:15</td>
+                </tr>
+                
+                <tr>
+                  <td>Song 6</td>
+                  <td>Artist 6</td>
+                  <td>Electronic</td>
+                  <td>Dark</td>
+                  <td>100</td>
+                  <td>Medium</td>
+                  <td>4:12</td>
+                </tr>
+                
+                <tr>
+                  <td>Song 7</td>
+                  <td>Artist 7</td>
+                  <td>Lo-Fi</td>
+                  <td>Chill</td>
+                  <td>80</td>
+                  <td>Low</td>
+                  <td>3:56</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>QUEUE</strong><span>© 2026 Music Inc.</span></div>
+      <div class="footer-links">
+        <a href="about.html#status">Status</a><a href="about.html#privacy">Privacy Policy</a>
+        <a href="about.html#terms">Terms of Service</a><a href="about.html#contact">Contact Support</a>
+      </div>
+      <div class="social-links"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Twitter">♡</a></div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

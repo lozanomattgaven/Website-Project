@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="brand" href="home.html">
+        <img src="images/queue-logo.png" alt="Queue">
+      </a>
+
+      <nav class="main-nav">
+        <a href="home.html" class="">Home</a>
+        <a href="create.html" class="">Create</a>
+        <a href="discover.html" class="">Discover</a>
+        <a href="library.html" class="">Library</a>
+        <a href="about.html" class="active">About</a>
+      </nav>
+
+      <form class="header-search" action="discover.html">
+        <span class="search-symbol">⌕</span>
+        <input type="search" name="q" placeholder="Find music..." aria-label="Find music">
+      </form>
+
+      <a class="sign-in" href="#" data-message="Sign in is a demo feature.">Sign In</a>
+    </header>
+
+    <main>
+      <section class="content-width about-page">
+        <span class="eyebrow">ABOUT QUEUE</span>
+        <h1>Music that flows, <span class="gradient-text">not just follows.</span></h1>
+        <p class="about-lead">Queue is a music playlist-building platform designed specifically just for building a playlist that has the same vibe<br class="desktop-only"> with each song leading naturally into the next one. This is not a streaming service, and we arent just a shuffle button either<br class="desktop-only">We are a tool for lazy people that cant be bothered to improved their own music taste to come in and make a playlist either<br class="desktop-only"> just for them or for everyone. Simple really.</p>
+        <section class="recommend-method">
+          <h2>How Queue Recommends</h2>
+          <p>With Queue we have designed the perfect machine(Probably AI who knows havent implemented it yet) that takes a song of your choosing<br class="desktop-only"> and uses it as an anchor that recommends the next song after your first is done playing</p>
+          <div class="method-grid">
+            <article class="panel">
+              <span class="eyebrow">STEP 01</span>
+              <h3>Song Anchor</h3>
+              <p>Your anchor point. Everything starts with the specific musical characteristics of this final track.</p>
+            </article>
+
+            <article class="panel">
+              <span class="eyebrow">STEP 02</span>
+              <h3>Song Characteristics</h3>
+              <p>Analyzing the fine parameters: Mood, Energy, Tempo (BPM), and precise Artist metadata.</p>
+            </article>
+
+            <article class="panel">
+              <span class="eyebrow">STEP 03</span>
+              <h3>User Preferences</h3>
+              <p>We overlay your desired vibe direction, familiarity balance, and appetite for discovery.</p>
+            </article>
+
+            <article class="panel"><span class="eyebrow">STEP 04</span>
+              <h3>Next Recommendation</h3>
+              <p>The natural next step. A handpicked candidate that bridges perfectly with no jarring transitions.</p>
+            </article>
+          </div>
+
+          <div class="method-grid method-grid-second">
+            <article class="panel"><span class="feature-icon">◎</span>
+              <h3>Mood Matching</h3>
+              <p>Queue reads emotional tone — melancholy flows into pensive, not upbeat pop.</p>
+            </article>
+
+            <article class="panel"><span class="feature-icon">∿</span>
+              <h3>Tempo Continuity</h3>
+              <p>BPM changes happen gradually. No jarring switches between 80 and 160.</p>
+            </article>
+
+            <article class="panel"><span class="feature-icon">↗</span>
+              <h3>Energy Arc</h3>
+              <p>Control whether the energy climbs, holds, or winds down across your queue.</p>
+            </article>
+
+            <article class="panel">
+              <span class="feature-icon">✣</span>
+              <h3>Artist Context</h3>
+              <p>Influences, collaborators, and sonic neighbors all factor into what comes next.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="difference-section">
+            <div>
+              <h2>Why Queue Is Different</h2>
+              <p>Traditional music managers treat your library as a rigid spreadsheet file. Sorting options are limited to simple genre groupings or basic metadata. Queue looks at your music through the lens of continuous energy and emotional connection.</p><blockquote>”Queue focuses on the transition between songs,<br> not just the songs themselves.”</blockquote>
+            </div>
+
+            <div class="comparison">
+              <div class="comparison-head">
+              <span>TRADITIONAL</span>
+              <strong>QUEUE</strong>
+            </div>
+
+            <div>
+              <span>Build a playlist from scratch</span>
+              <b>Start from your last song and extend naturally</b>
+            </div>
+            
+            <div>
+              <span>Songs picked in isolation</span>
+              <b>Every recommendation is context-aware</b>
+            </div>
+
+            <div>
+              <span>Genre-based filtering</span>
+              <b>Mood, energy, tempo, and artist characteristic matching</b>
+            </div>
+
+            <div>
+              <span>Fixed playlist order</span>
+              <b>Dynamic, always evolving from the current end</b>
+            </div>
+          </div>
+        </section>
+
+        <section class="video-panel panel">
+          <h2>See How Queue Works</h2>
+          <p>Watch how Queue builds the perfect flow.</p>
+          <a href="create.html" class="video-preview">
+            <span class="play-button">➜</span>
+          </a>
+        </section>
+
+        <section class="stats-grid">
+          <article class="panel">
+            <strong class="purple-stat">big #</strong>
+            <p>Songs analyzed for contextual mood &amp; tempo matching.</p>
+          </article>
+
+          <article class="panel">
+            <strong class="blue-stat">big #</strong>
+            <p>Perfect custom queues successfully created by our users.</p>
+          </article>
+
+          <article class="panel">
+            <strong class="green-stat">big #</strong>
+            <p>Vibe match accuracy reported across listener feedback.</p>
+          </article>
+        </section>
+
+        <section class="about-cta panel">
+          <h2>Start building your perfect queue</h2>
+          <a class="button primary" href="create.html">Get Started</a>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>QUEUE</strong>
+        <span>© 2026 Music Inc.</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="about.html#status">Status</a>
+        <a href="about.html#privacy">Privacy Policy</a>
+        <a href="about.html#terms">Terms of Service</a>
+        <a href="about.html#contact">Contact Support</a>
+      </div>
+
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="Twitter">♡</a></div>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

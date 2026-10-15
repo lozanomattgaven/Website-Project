@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Create</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body>
+    <header class="site-header">
+      <a class="brand" href="home.html">
+        <img src="images/queue-logo.png" alt="Queue">
+      </a>
+
+      <nav class="main-nav">
+        <a href="home.html" class="">Home</a>
+        <a href="create.html" class="active">Create</a>
+        <a href="discover.html" class="">Discover</a>
+        <a href="library.html" class="">Library</a>
+        <a href="about.html" class="">About</a>
+      </nav>
+
+      <form class="header-search" action="discover.html">
+        <span class="search-symbol">⌕</span>
+        <input type="search" name="q" placeholder="Find music..." aria-label="Find music">
+      </form>
+
+      <a class="sign-in" href="#" data-message="Sign in is a demo feature.">Sign In</a>
+    </header>
+
+    <main>
+      <section class="content-width create-page">
+        <div class="page-intro">
+          <h1>Create a Queue</h1>
+          <p>Build yourself a perfect playlist, one song at a time.</p>
+        </div>
+
+        <div class="create-layout">
+          <div class="create-left">
+            <section class="panel add-songs">
+              <h2>ADD SONGS</h2>
+              <form id="song-search" class="song-search">
+                <span>⌕</span>
+                <input type="search" id="song-query" placeholder="Search for songs or artists...">
+                <button type="submit" aria-label="Search">↵</button>
+              </form>
+            </section>
+
+            <section class="panel current-queue">
+              <div class="panel-heading">
+                <h2>CURRENT QUEUE</h2>
+                <span id="queue-count">3 songs</span>
+              </div>
+
+              <div id="queue-list">
+                <div class="queue-row" draggable="true"><span class="drag">⠿</span>
+                  <span class="number">01</span>
+                  <img src="images/artists/1.png" alt="">
+                  <div class="song-name">
+                    <strong>Song 1</strong>
+                    <span>Artist 1</span>
+                  </div><span class="duration">5:02</span>
+                  <button class="delete-song" aria-label="Remove song">▣</button>
+                </div>
+
+                <div class="queue-row" draggable="true">
+                  <span class="drag">⠿</span>
+                  <span class="number">02</span>
+                  <img src="images/artists/2.png" alt="">
+                  <div class="song-name">
+                    <strong>Song 2</strong>
+                    <span>Artist 2</span>
+                  </div><span class="duration">2:07</span>
+                  <button class="delete-song" aria-label="Remove song">▣</button>
+                </div>
+
+                <div class="queue-row" draggable="true">
+                  <span class="drag">⠿</span>
+                  <span class="number">03</span>
+                  <img src="images/artists/3.png" alt="">
+                  <div class="song-name">
+                    <strong>Song 3</strong>
+                    <span>Artist 3</span>
+                  </div>
+                  <span class="duration">4:12</span>
+                  <button class="delete-song" aria-label="Remove song">▣</button>
+                </div>
+              </div>
+
+              <button class="button primary save-queue" data-message="Your queue has been saved in this demo.">Save Queue</button>
+
+            </section>
+          </div>
+
+          <aside class="panel vibe-panel">
+            <h2>WHAT VIBE ARE YOU GOING FOR?</h2>
+            <div class="control-group">
+              <h3>MOOD</h3>
+              <div class="pill-row">
+                <button class="pill">Chill</button>
+                <button class="pill">Energetic</button>
+                <button class="pill">Dreamy</button>
+                <button class="pill selected">Dark</button>
+                <button class="pill">Happy</button>
+                <button class="pill">Melancholy</button>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <h3>GENRE</h3>
+              <div class="pill-row">
+                <button class="pill selected">Electronic</button>
+                <button class="pill">Indie</button>
+                <button class="pill">Lo-Fi</button>
+                <button class="pill">Pop</button>
+                <button class="pill">Hip-Hop</button>
+                <button class="pill">Ambient</button>
+                <button class="pill">Synthwave</button>
+                <button class="pill">R&amp;B</button>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <h3>TEMPO LIMIT</h3>
+              <div class="pill-row">
+                <button class="pill">Slow</button>
+                <button class="pill selected">Medium</button>
+                <button class="pill">Fast</button>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <h3>FAMILIARITY</h3>
+              <div class="pill-row">
+                <button class="pill">Familiar</button>
+                <button class="pill selected">Balanced</button>
+                <button class="pill">Adventurous</button>
+              </div>
+            </div>
+
+            <div class="control-group slider-group">
+              <label for="energy">ENERGY THRESHOLD</label>
+              <div>
+                <span>Low</span>
+                <input id="energy" type="range" min="0" max="100" value="70">
+                <span>High</span>
+              </div>
+            </div>
+
+            <div class="control-group slider-group">
+              <label for="discovery">DISCOVERY RANGE</label>
+              <div>
+                <span>Safe</span>
+                <input id="discovery" type="range" min="0" max="100" value="50">
+                <span>Wild</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <section class="last-track">
+          <img src="images/artists/5.png" alt="">
+          <div>
+            <span class="eyebrow">FOLLOWING YOUR LAST TRACK</span>
+            <strong>Song 5 - Artist 5</strong>
+          </div>
+
+          <div class="track-tags">
+            <span>MOOD: Dark</span>
+            <span>GENRE: Electronic Rock</span>
+            <span>ENERGY: 110%</span>
+            <span>TEMPO: HIGH</span>
+          </div>
+        </section>
+
+        <section class="recommendations">
+          <h2>Recommended From Your Last Song</h2>
+          <div class="recommendation-grid">
+            <article class="panel recommendation">
+              <img src="images/artists/4.png" alt="">
+              <div class="recommend-meta">
+                <strong>94% match</strong>
+                <span>98 BPM</span>
+              </div>
+              <h3>Recommended Song 1 </h3>
+              <p>Artist 1</p>
+              <div class="chips">
+                <span>MELANCHOLY</span>
+                <span>INDIE</span>
+                <span>MEDIUM ENERGY</span>
+              </div><button class="outline-button add-recommendation">+ Add to Queue</button>
+            </article>
+
+            <article class="panel recommendation">
+              <img src="images/artists/6.png" alt="">
+              <div class="recommend-meta">
+                <strong>89% match</strong>
+                <span>128 BPM</span>
+              </div>
+              <h3>Recommended Song 2</h3>
+              <p>Artist 2</p>
+              <div class="chips">
+                <span>DARK</span>
+                <span>SYNTHWAVE</span>
+                <span>HIGH ENERGY</span>
+              </div><button class="outline-button add-recommendation">+ Add to Queue</button>
+            </article>
+
+            <article class="panel recommendation">
+              <img src="images/artists/2.png" alt="">
+              <div class="recommend-meta">
+                <strong>82% match</strong>
+                <span>88 BPM</span>
+              </div>
+              <h3>Corporate Slave</h3>
+              <p>Blue Pill</p>
+              <div class="chips">
+                <span>DARK</span>
+                <span>INDIE POP</span>
+                <span>LOW ENERGY</span>
+              </div>
+              <button class="outline-button add-recommendation">+ Add to Queue</button>
+            </article>
+          </div>
+          
+          <p class="recommend-note">Adding a song makes it the new anchor — Queue will recommend what comes next.</p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>QUEUE</strong>
+        <span>© 2026 Music Inc.</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="about.html#status">Status</a>
+        <a href="about.html#privacy">Privacy Policy</a>
+        <a href="about.html#terms">Terms of Service</a>
+        <a href="about.html#contact">Contact Support</a>
+      </div>
+
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="Twitter">♡</a></div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="brand" href="home.html">
+        <img src="images/queue-logo.png" alt="Queue">
+      </a>
+
+      <nav class="main-nav">
+        <a href="home.html" class="">Home</a>
+        <a href="create.html" class="">Create</a>
+        <a href="discover.html" class="">Discover</a>
+        <a href="library.html" class="active">Library</a>
+        <a href="about.html" class="">About</a>
+      </nav>
+
+      <form class="header-search" action="discover.html">
+        <span class="search-symbol">⌕</span>
+        <input type="search" name="q" placeholder="Find music..." aria-label="Find music">
+      </form>
+
+      <a class="sign-in" href="#" data-message="Sign in is a demo feature.">Sign In</a>
+    </header>
+
+    <main>
+      <section class="content-width library-page">
+        <div class="page-intro">
+          <h1>Library</h1>
+          <p>Your saved queues, songs, and artists.</p>
+        </div>
+
+        <div class="tabs">
+          <a href="#queues" class="active">Saved Queues</a>
+          <a href="#songs">Saved Songs</a>
+          <a href="#artists">Favorite Artists</a>
+          <a href="#recent">Recently Played</a>
+        </div>
+
+        <section id="queues" class="library-grid">
+          <a class="library-card" href="create.html">
+            <img src="images/playlists/3.png" alt="">
+            <div class="library-card-info">
+              <div>
+                <span class="tag">DARK</span>
+                <span>24 tracks</span>
+              </div>
+              <h2>Late Night Drive</h2>
+              <p>Updated 2 days ago</p>
+            </div>
+          </a>
+
+          <a class="library-card" href="create.html">
+            <img src="images/playlists/7.png" alt="">
+            <div class="library-card-info">
+              <div>
+                <span class="tag blue-tag">CHILL</span>
+                <span>18 tracks</span>
+              </div><h2>Slow Mornings</h2>
+              <p>Updated 5 days ago</p>
+            </div>
+          </a>
+
+          <a class="library-card" href="create.html">
+            <img src="images/playlists/3.png" alt="">
+            <div class="library-card-info">
+              <div>
+                <span class="tag green-tag">ENERGETIC</span>
+                <span>32 tracks</span>
+              </div>
+              <h2>High Energy</h2>
+              <p>Updated 1 week ago</p>
+            </div>
+          </a>
+
+          <a class="library-card" href="create.html">
+            <img src="images/playlists/after_hours.jpg" alt="">
+            <div class="library-card-info">
+              <div>
+                <span class="tag">DARK</span>
+                <span>21 tracks</span>
+              </div>
+              <h2>After Hours</h2>
+              <p>Updated 2 weeks ago</p>
+            </div>
+          </a>
+
+          <a class="new-queue" href="create.html">
+            <span>＋</span>
+            <h2>New Queue</h2>
+            <p>Create a customized empty flow</p>
+          </a>
+        </section>
+
+        <section id="songs" class="library-extra">
+          <h2>Saved Songs</h2>
+          <div class="queue-row">
+            <img src="images/artists/1.png" alt="">
+            <div class="song-name">
+              <strong>Song</strong>
+              <span>Artist · 1:07</span>
+            </div>
+            <a href="create.html">Open in Create</a>
+          </div>
+        </section>
+
+        <section id="artists" class="library-extra">
+          <h2>Favorite Artists</h2>
+          <p>Your favorite artists will appear here when saved.</p>
+        </section>
+
+        <section id="recent" class="library-extra">
+          <h2>Recently Played</h2>
+          <p>Mr. Boombastic - THE BIG CHEESE</p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>QUEUE</strong>
+        <span>© 2026 Music Inc.</span>
+      </div>
+      <div class="footer-links">
+        <a href="about.html#status">Status</a>
+        <a href="about.html#privacy">Privacy Policy</a>
+        <a href="about.html#terms">Terms of Service</a>
+        <a href="about.html#contact">Contact Support</a>
+      </div>
+
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="Twitter">♡</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
